@@ -86,7 +86,7 @@ Server Hello
 
 ### Screenshot
 
-![Filtered Web Connection](screenshots_02-filtered-web-connection.jpg)
+![Filtered Web Connection](screenshots_02-filtered-web-connection.png)
 
 ## 3. Display Filters Used
 
