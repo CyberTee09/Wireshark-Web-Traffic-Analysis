@@ -77,7 +77,7 @@ Server Hello
 
 | Field            | Value             |
 | ---------------- | ----------------- |
-| Source IP        | `10.35.118.229`   |
+| Source IP        | `10.35.118.x`   |
 | Destination IP   | `142.251.209.174` |
 | Source Port      | `63879`           |
 | Destination Port | `443`             |
@@ -108,7 +108,7 @@ tcp.stream == 3
 
 The browser first performed a DNS lookup for `www.google.com`. The DNS response returned several IPv4 addresses, including `142.251.209.174`.
 
-The computer then established a TCP connection from `10.35.118.229` using source port `63879` to `142.251.209.174` on destination port `443`.
+The computer then established a TCP connection from `10.35.118.x` using source port `63879` to `142.251.209.174` on destination port `443`.
 
 The TCP three-way handshake was completed using SYN, SYN-ACK, and ACK packets. After the TCP connection was established, the browser initiated a TLS 1.3 handshake using Client Hello and Server Hello messages.
 
@@ -126,7 +126,7 @@ DNS Response
       | 142.251.209.174
       v
 TCP Connection
-10.35.118.229:63879
+10.35.118.x:63879
         |
         v
 142.251.209.174:443
